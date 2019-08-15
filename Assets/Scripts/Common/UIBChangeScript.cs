@@ -27,12 +27,12 @@ public class UIBChangeScript : MonoBehaviour
         for (int i = 0; i < _buttons.Length; i++)
         {
             Debug.Log(i);
-            ColorBlock cb = _buttons[0].colors;
+            ColorBlock cb = _buttons[i].colors;
             cb.normalColor = _normalColor;
             cb.highlightedColor = _highlightedColor;
             cb.pressedColor = _pressedColor;
             cb.disabledColor = _disabledColor;
-            _buttons[0].colors = cb;
+            _buttons[i].colors = cb;
         }
     }
 
